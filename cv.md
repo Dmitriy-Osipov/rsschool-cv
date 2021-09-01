@@ -1,5 +1,4 @@
 # Dmitriy Osipov
-___
 ## Contact information
 * **E-mail:** yourfastdead@gmail.com
 * **Telegram:** @Just_for_skills
@@ -26,7 +25,7 @@ function findSquares (num) {
 ___
 ## Education
 * **main spec**: Transbaikal State University - Optical system and communication networks
-* Learn **JavaScript** on https://learn.javascript.ru/
+* **JavaScript** on [learn.javascript.ru](https://learn.javascript.ru/)
 * **Codewars** profile:
 
 ![](https://www.codewars.com/users/Dmitriy-Osipov/badges/large)
