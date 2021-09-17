@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+    --dark-color: #0e1821;
+    --semi-dark-color: #44535e;
+    --light-dark-color: #798f8c;
+    --light-color: #d9ebe9;
+    --blue-color: #3c7cbb;
+    --red-color: #bb432c;
+}
+
+body {
+    background-color: #0e1821;
+    box-sizing: border-box;
+    line-height: 24px;
+}
+
+.container {
+    width: 1024px;
+    margin: 20px auto;
+    background: var(--dark-color);
+}
+
+.main-page {
+    display: flex;
+    letter-spacing: 1px;
+}
+
+.leftside {
+    width: 30%;
+    background-color: #44535e;
+    color: #d9ebe9;
+    font-family: 14px Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+}
+
+header img {
+    margin-bottom: 20px;
+    border: 2px solid var(--dark-color);
+}
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+h2 {
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    background-color: var(--dark-color);
+    color: var(--blue-color);
+    border-top: 2px solid var(--blue-color);    
+}
+
+main {
+    padding: 10px 20px;
+}
+
+main li {
+    margin-bottom: 10px;
+}
+
+.contacts li img {
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.contacts li p {
+    vertical-align: middle;
+    display: inline;
+}
+
+.skills ul {
+    list-style: square;
+    margin-left: 20px;    
+}
+
+.languages {
+    margin-bottom: 50px;
+}
+
+.languages ul {
+    list-style: square;
+    margin-left: 20px;
+}
+
+.language {
+    font-weight: bold;
+}
+
+.rightside {
+    width: 70%;
+    background-color: #c4d6d3;
+    color: var(--dark-color); 
+    font: 16px Verdana, sans-serif;
+    padding: 30px;
+    margin-left: 5px;
+}
+
+.rightside section {
+    margin-bottom: 50px;
+}
+
+.rightside section p {
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    flex: 1;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: var(--dark-color);
+    border-bottom: 2px solid var(--blue-color);
+}
+
+.subhead {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.subhead img {
+    margin-right: 20px;
+}
+
+.codewars {
+    display: flex;
+}
+
+.codewars img {
+    margin-left: 10px;
+}
+
+.codewars p {
+    vertical-align: center;
+}
+
+pre {
+    background-color: var(--light-color);
+    font: normal 16px Arial, sans-serif;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    background-color: var(--light-color);
+    margin-top: 5px;
+    padding-left: 70px;
+}
+
+.footer-text {
+    color: var(--semi-dark-color);
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.github-icon {
+    position: relative;
+    right: 60px;
+}
+
+

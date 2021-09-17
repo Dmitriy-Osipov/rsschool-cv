@@ -4,26 +4,141 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Dmitriy Osipov CV</title>
 </head>
 <body>
-    <div class="page">
-        <aside class="sidebar">
-
-        </aside>
-        <main class="container">
-
-        </main>
-    <footer>
+    <div class="container">
+        <div class="main-page">
+            <div class="leftside">
+                <header>
+                    <img src="img/photo.jpg" alt="Photo" width="279" height="279">
+                    <h1>Dmitriy Osipov</h1>
+                </header>
+                <main>
+                    <section class="contacts">
+                        <h2>Contacts</h2>
+                        <ul>
+                            <li>
+                                <img src="./img/icons/phone.svg" alt="Phone Icon" width="30" height="30">
+                                <p>+7 (924) 387-07-86</p>
+                            </li>
+                            <li>
+                                <img src=".//img/icons/email.svg" alt="Email Icon" width="30" height="30">
+                                <p>yourfastdead@gmail.com</p>
+                            </li>
+                            <li>
+                                <img src="./img/icons/telegram.svg" alt="Telegram Icon" width="30" height="30">
+                                <p>@Just_for_skills</p>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="skills">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>
+                                <p>HTML</p>
+                            </li>
+                            <li>
+                                <p>CSS</p>
+                            </li>
+                            <li>
+                                <p>JavaScript</p>
+                            </li>
+                            <li>
+                                <p>Git</p>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="languages">
+                        <h2>Languages</h2>
+                        <ul>
+                            <li>
+                                <p class="language">RUSSIAN</p>
+                                <p>Native</p>
+                            </li>
+                            <li>
+                                <p class="language">ENGLISH</p>
+                                <p>Pre-Intermediate (A2)</p>
+                            </li>
+                        </ul>
+                    </section>
+                </main>
+            </div>
+            <div class="rightside">
+                <section class="about-myself">
+                    <div class="subhead">
+                        <img src="./img/icons/about myself.svg" alt="About Me Icon" width="30" height="30">
+                        <h3>About Myself</h3>
+                    </div>
+                    <p>
+                        I started my career as a network engineer in the army. 
+                        Builded optical networks and worked with SDH-stack/OpticalEthernet equipment.
+                        After 3 years relocated in Novosibirsk from a small city.
+                    </p>
+                    <p>
+                        Now I working as a SCADA-engineer in the power industry. 
+                        At my cuurent job I'm managing special software and hardware equipment.   
+                        I started coding with scrypts on JS for my work. 
+                        Now I'm taking a course at "The Rolling Scopes School" and you are looking at my first site.
+                        I hope this will help me get into the Frontend development world.
+                    </p>
+                </section>
+                <section class="education">
+                    <div class="subhead">
+                        <img src="./img/icons/education.svg" alt="Education Icon" width="30" height="30">
+                        <h3>Education</h3>
+                    </div>
+                    <ul>
+                        <li>
+                            <p>
+                                <strong>main spec:</strong> Transbaikal State University - Optical system and communication networks;
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                <strong>JavaScript</strong> on 
+                                <a href="https://learn.javascript.ru/">learn.javascript.ru</a>;
+                            </p>
+                        </li>
+                        <li>
+                            <div class="codewars">
+                                <p>
+                                <strong>Codewars</strong> profile:
+                                </p>
+                                <img src="http://www.codewars.com/users/Dmitriy-Osipov/badges/large" alt="codewars-badge" width="300" height="30">
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+                <section class="code-example">
+                    <div class="subhead">
+                        <img src="./img/icons/code.svg" alt="Code Icon" width="30" height="30">
+                        <h3>Code Example</h3>
+                    </div>
+                    <p>KATA from CODEWARS: complete the function that takes an odd integer (0 < n < 1000000) which is the difference between two consecutive perfect squares, and return these squares as a string in the format "bigger-smaller"</p>
+                    <pre>
+                        <code>
+                            function findSquares (num) {
+                                return (~~(num / 2) + 1)**2 + '-' + (~~(num / 2))**2;
+                              };
+                        </code>
+                    </pre>
+                </section>
+                </div>
+        </div>
+        <footer>
         <a class="github-profile" href="https://github.com/Dmitriy-Osipov">
-            <img class="github" src="img/icons/github.svg" alt="GitHub Icon" width="30" height="30">
-            <p>GitHub Profile</p>
+            <img class="github-icon" src="img/icons/github.svg" alt="GitHub Profile" width="30" height="30">
+
         </a>
+        <p class="footer-text">© 2021</p>
         <a href="https://rs.school/js/">
             <img src="img/icons/rss-logo.svg" alt="RSSchool Icon" width="87" height="30">
         </a>
-    </footer>
+        </footer>
+        
     </div>   
 </body>
 </html>
