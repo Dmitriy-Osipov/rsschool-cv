@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+    --dark-color: #0e1821;
+    --semi-dark-color: #44535e;
+    --light-dark-color: #798f8c;
+    --light-color: #d9ebe9;
+    --blue-color: #3c7cbb;
+    --red-color: #bb432c;
+}
+
+body {
+    box-sizing: border-box;
+    line-height: 24px;
+    background-color: var(--dark-color);  
+}
+
+.container {
+    margin: 20px auto;    
+    width: 1024px;
+}
+
+.main-page {
+    display: flex;
+}
+
+.leftside {
+    width: 30%;
+    font: 16px "Comic Sans MS", cursive, sans-serif;
+    letter-spacing: 1px;
+    background-color: var(--semi-dark-color);
+    color: var(--light-color);
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+}
+
+header img {
+    margin-bottom: 20px;
+    border: 2px solid var(--dark-color);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 3px;    
+}
+
+h2 {
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    border-top: 2px solid var(--blue-color);
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold;
+    background-color: var(--dark-color);
+    color: var(--blue-color);
+}
+
+strong {
+    font-weight: bold;
+    font-size: 17px;
+}
+
+main {
+    padding: 10px 20px;
+}
+
+main li {
+    margin-bottom: 10px;
+}
+
+.contacts li img {
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.contacts li p {
+    display: inline;
+    vertical-align: middle;    
+}
+
+.skills ul,
+.languages ul {
+    margin-left: 20px;
+    list-style: square;        
+}
+
+.languages {
+    margin-bottom: 50px;
+}
+
+.language {
+    font-weight: bold;
+}
+
+.rightside {
+    width: 70%;
+    padding: 30px;
+    margin-left: 5px;
+    font: 16px "Comic Sans MS", cursive, sans-serif;
+    line-height: 24px;
+    background-color: #c4d6d3;
+    color: var(--dark-color); 
+}
+
+.rightside section {
+    margin-bottom: 20px;
+}
+
+.rightside section p {
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    flex: 1;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: var(--dark-color);
+    border-bottom: 2px solid var(--blue-color);
+}
+
+.subhead {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.subhead img {
+    margin-right: 20px;
+}
+
+.education ul,
+.code-example ul {
+    margin-left: 50px;
+    list-style: square;
+}
+
+.education li p {
+    margin-left: 0px;
+}
+
+.codewars p {
+    vertical-align: center;
+}
+
+.code-example li p {
+    margin-left: 0px;
+}
+
+pre {
+    position: relative;
+    right: 100px;
+    width: 750px;
+    margin-top: 20px;
+    border-right: 5px solid var(--blue-color);
+    border-top: 5px solid var(--blue-color);
+    font: 16px Arial, sans-serif;    
+    background-color: var(--light-color);
+    border-radius: 10px;    
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-top: 5px;
+    padding-left: 70px;
+    background-color: var(--light-color);
+}
+
+.footer-text {
+    font: bold 14px "Comic Sans MS", cursive, sans-serif; 
+    color: var(--semi-dark-color);
+}
+
+.github-icon {
+    position: relative;
+    right: 60px;
+}
+
+
