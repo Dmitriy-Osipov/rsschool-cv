@@ -14,32 +14,31 @@
 }
 
 body {
-    background-color: #0e1821;
     box-sizing: border-box;
     line-height: 24px;
+    background-color: var(--dark-color);  
 }
 
 .container {
+    margin: 20px auto;    
     width: 1024px;
-    margin: 20px auto;
-    background: var(--dark-color);
 }
 
 .main-page {
     display: flex;
-    letter-spacing: 1px;
 }
 
 .leftside {
     width: 30%;
-    background-color: #44535e;
-    color: #d9ebe9;
-    font-family: 14px Arial, sans-serif;
+    font: 16px "Comic Sans MS", cursive, sans-serif;
+    letter-spacing: 1px;
+    background-color: var(--semi-dark-color);
+    color: var(--light-color);
 }
 
 header {
-    text-align: center;
     padding: 10px;
+    text-align: center;
 }
 
 header img {
@@ -48,23 +47,28 @@ header img {
 }
 
 h1 {
-    text-transform: uppercase;
-    letter-spacing: 3px;
     font-size: 2rem;
     font-weight: bold;
     line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 3px;    
 }
 
 h2 {
-    text-transform: uppercase;
-    text-align: left;
-    font-weight: bold;
     padding: 5px 10px;
     margin-bottom: 20px;
     margin-top: 30px;
+    border-top: 2px solid var(--blue-color);
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold;
     background-color: var(--dark-color);
     color: var(--blue-color);
-    border-top: 2px solid var(--blue-color);    
+}
+
+strong {
+    font-weight: bold;
+    font-size: 17px;
 }
 
 main {
@@ -76,27 +80,23 @@ main li {
 }
 
 .contacts li img {
-    vertical-align: middle;
     margin-right: 15px;
+    vertical-align: middle;
 }
 
 .contacts li p {
-    vertical-align: middle;
     display: inline;
+    vertical-align: middle;    
 }
 
-.skills ul {
-    list-style: square;
-    margin-left: 20px;    
+.skills ul,
+.languages ul {
+    margin-left: 20px;
+    list-style: square;        
 }
 
 .languages {
     margin-bottom: 50px;
-}
-
-.languages ul {
-    list-style: square;
-    margin-left: 20px;
 }
 
 .language {
@@ -105,15 +105,16 @@ main li {
 
 .rightside {
     width: 70%;
-    background-color: #c4d6d3;
-    color: var(--dark-color); 
-    font: 16px Verdana, sans-serif;
     padding: 30px;
     margin-left: 5px;
+    font: 16px "Comic Sans MS", cursive, sans-serif;
+    line-height: 24px;
+    background-color: #c4d6d3;
+    color: var(--dark-color); 
 }
 
 .rightside section {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .rightside section p {
@@ -140,37 +141,49 @@ h3 {
     margin-right: 20px;
 }
 
-.codewars {
-    display: flex;
+.education ul,
+.code-example ul {
+    margin-left: 50px;
+    list-style: square;
 }
 
-.codewars img {
-    margin-left: 10px;
+.education li p {
+    margin-left: 0px;
 }
 
 .codewars p {
     vertical-align: center;
 }
 
+.code-example li p {
+    margin-left: 0px;
+}
+
 pre {
+    position: relative;
+    right: 100px;
+    width: 750px;
+    margin-top: 20px;
+    border-right: 5px solid var(--blue-color);
+    border-top: 5px solid var(--blue-color);
+    font: 16px Arial, sans-serif;    
     background-color: var(--light-color);
-    font: normal 16px Arial, sans-serif;
+    border-radius: 10px;    
 }
 
 footer {
     display: flex;
     justify-content: space-around;
-    padding: 10px;
     align-items: center;
-    background-color: var(--light-color);
+    padding: 10px;
     margin-top: 5px;
     padding-left: 70px;
+    background-color: var(--light-color);
 }
 
 .footer-text {
+    font: bold 14px "Comic Sans MS", cursive, sans-serif; 
     color: var(--semi-dark-color);
-    font-size: 14px;
-    font-weight: bold;
 }
 
 .github-icon {

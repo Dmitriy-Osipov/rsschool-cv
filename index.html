@@ -69,7 +69,7 @@
             <div class="rightside">
                 <section class="about-myself">
                     <div class="subhead">
-                        <img src="./img/icons/about myself.svg" alt="About Me Icon" width="30" height="30">
+                        <img src="./img/icons/about-myself.svg" alt="About Me Icon" width="30" height="30">
                         <h3>About Myself</h3>
                     </div>
                     <p>
@@ -92,9 +92,7 @@
                     </div>
                     <ul>
                         <li>
-                            <p>
-                                <strong>main spec:</strong> Transbaikal State University - Optical system and communication networks;
-                            </p>
+                            <h4><strong>main spec:</strong> Transbaikal State University - Optical system and communication networks;</h4>
                         </li>
                         <li>
                             <p>
@@ -104,10 +102,12 @@
                         </li>
                         <li>
                             <div class="codewars">
+                                <h5><strong>Codewars</strong> profile:</h5>
                                 <p>
-                                <strong>Codewars</strong> profile:
-                                </p>
-                                <img src="http://www.codewars.com/users/Dmitriy-Osipov/badges/large" alt="codewars-badge" width="300" height="30">
+                                    <a href="http://www.codewars.com/users/Dmitriy-Osipov/">
+                                        <img src="http://www.codewars.com/users/Dmitriy-Osipov/badges/large" alt="codewars-badge" width="300" height="30">    
+                                    </a>
+                                </p>                                
                             </div>
                         </li>
                     </ul>
@@ -117,28 +117,91 @@
                         <img src="./img/icons/code.svg" alt="Code Icon" width="30" height="30">
                         <h3>Code Example</h3>
                     </div>
-                    <p>KATA from CODEWARS: complete the function that takes an odd integer (0 < n < 1000000) which is the difference between two consecutive perfect squares, and return these squares as a string in the format "bigger-smaller"</p>
+                    <p>
+                        <strong>4kyu KATA from CODEWARS:</strong> Your task in order to complete this Kata is to write a function which formats a duration, given as a number of seconds, in a human-friendly way.
+                        The function must accept a non-negative integer. If it is zero, it just returns "now". Otherwise, the duration is expressed as a combination of years, days, hours, minutes and seconds.
+                    </p>       
+                    <p>
+                        <strong>Detailed rules</strong>
+                    </p>
+                    <ul>
+                        <li>
+                            <p>
+                                The resulting expression is made of components like 4 seconds, 1 year, etc. In general, a positive integer and one of the valid units of time, separated by a space. The unit of time is used in plural if the integer is greater than 1.                      
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                The components are separated by a comma and a space (", "). Except the last component, which is separated by " and ", just like it would be written in English.               
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                A more significant units of time will occur before than a least significant one. Therefore, 1 second and 1 year is not correct, but 1 year and 1 second is.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                Different components have different unit of times. So there is not repeated units like in 5 seconds and 1 second.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                A component will not appear at all if its value happens to be zero. Hence, 1 minute and 0 seconds is not valid, but it should be just 1 minute.
+                            </p>
+                        </li>
+                        <li>
+                            <p>
+                                A unit of time must be used "as much as possible". It means that the function should not return 61 seconds, but 1 minute and 1 second instead. Formally, the duration specified by of a component must not be greater than any valid more significant unit of time.
+                            </p>
+                        </li>
+                    </ul>
                     <pre>
                         <code>
-                            function findSquares (num) {
-                                return (~~(num / 2) + 1)**2 + '-' + (~~(num / 2))**2;
-                              };
+                            function formatDuration (sec) {
+                                if (sec == 0) return 'now';
+                                
+                                let string = '';
+                                let [y, d, h, m, s] =  [~~(sec / (365*24*60*60)), 
+                                                               ~~(sec / (24*60*60)) % 365,
+                                                               ~~(sec / (60*60)) % 24,
+                                                               ~~(sec / 60) % 60,
+                                                                   (sec % 60)];
+
+                                
+                                y ? y == 1 ? string += y + ' year' : string += y + ' years' : 0;                        //year
+                                y && (d || h || m) ? string +=', ' : 0;
+                                
+                                d ? d == 1 ? string += d + ' day' : string += d + ' days' : 0;                          //days
+                                d && (h || m) ? string +=', ' : 0;
+                                
+                                h ? h == 1 ? string += h + ' hour' : string += h + ' hours' : 0;                       //hours
+                                h && m && s ?  string +=', ' : h && m ? string += ' and ' : 0;
+                                
+                                m ? m == 1 ? string += m + ' minute' : string += m + ' minutes' : 0;            //minutes
+                                
+                                (y || d || h || m) && s ? string +=' and ' : string;                                            //and
+                                
+                                s ? s == 1 ? string +=s + ' second' : string +=s + ' seconds' : 0 ;                //seconds
+                                
+                                return string;                              
+                              }
                         </code>
                     </pre>
                 </section>
-                </div>
+            </div>
         </div>
         <footer>
         <a class="github-profile" href="https://github.com/Dmitriy-Osipov">
             <img class="github-icon" src="img/icons/github.svg" alt="GitHub Profile" width="30" height="30">
-
         </a>
-        <p class="footer-text">© 2021</p>
+        <p class="footer-text">
+            © 2021
+        </p>
         <a href="https://rs.school/js/">
             <img src="img/icons/rss-logo.svg" alt="RSSchool Icon" width="87" height="30">
         </a>
-        </footer>
-        
+        </footer>        
     </div>   
 </body>
 </html>
