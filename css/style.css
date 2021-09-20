@@ -123,6 +123,7 @@ main li {
 h3 {
     flex: 1;
     vertical-align: middle;
+    padding-bottom: 4px;
     font-weight: bold;
     font-size: 1.3em;
     text-transform: uppercase;
