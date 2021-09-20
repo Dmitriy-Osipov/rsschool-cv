@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script src="./index.js"></script>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/adaptive.css">
     <title>Dmitriy Osipov CV</title>
 </head>
 <body>
@@ -157,7 +161,7 @@
                         </li>
                     </ul>
                     <pre>
-                        <code>
+                        <code class="language-javascript">
                             function formatDuration (sec) {
                                 if (sec == 0) return 'now';
                                 
@@ -169,20 +173,20 @@
                                                                    (sec % 60)];
 
                                 
-                                y ? y == 1 ? string += y + ' year' : string += y + ' years' : 0;                        //year
-                                y && (d || h || m) ? string +=', ' : 0;
+                                y ? y == 1 ? string += y + ' year' : string += y + ' years' : 0;                    //year
+                                y && (d || h || m) ? string += ', ' : 0;
                                 
-                                d ? d == 1 ? string += d + ' day' : string += d + ' days' : 0;                          //days
-                                d && (h || m) ? string +=', ' : 0;
+                                d ? d == 1 ? string += d + ' day' : string += d + ' days' : 0;                      //days
+                                d && (h || m) ? string += ', ' : 0;
                                 
-                                h ? h == 1 ? string += h + ' hour' : string += h + ' hours' : 0;                       //hours
-                                h && m && s ?  string +=', ' : h && m ? string += ' and ' : 0;
+                                h ? h == 1 ? string += h + ' hour' : string += h + ' hours' : 0;                   //hours
+                                h && m && s ?  string += ', ' : h && m ? string += ' and ' : 0;
                                 
-                                m ? m == 1 ? string += m + ' minute' : string += m + ' minutes' : 0;            //minutes
+                                m ? m == 1 ? string += m + ' minute' : string += m + ' minutes' : 0;        //minutes
                                 
-                                (y || d || h || m) && s ? string +=' and ' : string;                                            //and
+                                (y || d || h || m) && s ? string += ' and ' : string;                                       //and
                                 
-                                s ? s == 1 ? string +=s + ' second' : string +=s + ' seconds' : 0 ;                //seconds
+                                s ? s == 1 ? string += s + ' second' : string += s + ' seconds' : 0 ;          //seconds
                                 
                                 return string;                              
                               }
@@ -199,7 +203,7 @@
             © 2021
         </p>
         <a href="https://rs.school/js/">
-            <img src="img/icons/rss-logo.svg" alt="RSSchool Icon" width="87" height="30">
+            <img class="rss-icon" src="img/icons/rss-logo.svg" alt="RSSchool Icon" width="87" height="30">
         </a>
         </footer>        
     </div>   

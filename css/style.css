@@ -15,13 +15,14 @@
 
 body {
     box-sizing: border-box;
-    line-height: 24px;
+    font: 1rem "Comic Sans MS", cursive, sans-serif;
+    line-height: 1.5rem;
     background-color: var(--dark-color);  
 }
 
 .container {
     margin: 20px auto;    
-    width: 1024px;
+    width: 1024px;   
 }
 
 .main-page {
@@ -30,7 +31,6 @@ body {
 
 .leftside {
     width: 30%;
-    font: 16px "Comic Sans MS", cursive, sans-serif;
     letter-spacing: 1px;
     background-color: var(--semi-dark-color);
     color: var(--light-color);
@@ -68,7 +68,7 @@ h2 {
 
 strong {
     font-weight: bold;
-    font-size: 17px;
+    font-size: 1.1em;
 }
 
 main {
@@ -107,8 +107,6 @@ main li {
     width: 70%;
     padding: 30px;
     margin-left: 5px;
-    font: 16px "Comic Sans MS", cursive, sans-serif;
-    line-height: 24px;
     background-color: #c4d6d3;
     color: var(--dark-color); 
 }
@@ -125,8 +123,9 @@ main li {
 h3 {
     flex: 1;
     vertical-align: middle;
+    padding-bottom: 4px;
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.3em;
     text-transform: uppercase;
     color: var(--dark-color);
     border-bottom: 2px solid var(--blue-color);
@@ -134,11 +133,13 @@ h3 {
 
 .subhead {
     display: flex;
+    align-items: center;
     margin-bottom: 10px;
 }
 
 .subhead img {
     margin-right: 20px;
+    vertical-align: middle;
 }
 
 .education ul,
@@ -155,18 +156,22 @@ h3 {
     vertical-align: center;
 }
 
+.codewars img {
+    margin-top: 10px;
+}
+
 .code-example li p {
     margin-left: 0px;
 }
 
-pre {
+code {
     position: relative;
     right: 100px;
     width: 750px;
     margin-top: 20px;
     border-right: 5px solid var(--blue-color);
     border-top: 5px solid var(--blue-color);
-    font: 16px Arial, sans-serif;    
+    font: 1em Arial, sans-serif;    
     background-color: var(--light-color);
     border-radius: 10px;    
 }
@@ -182,7 +187,7 @@ footer {
 }
 
 .footer-text {
-    font: bold 14px "Comic Sans MS", cursive, sans-serif; 
+    font: bold 0.8em "Comic Sans MS", cursive, sans-serif; 
     color: var(--semi-dark-color);
 }
 
@@ -191,4 +196,6 @@ footer {
     right: 60px;
 }
 
-
+.hljs {
+    background: var(--light-color);
+}
