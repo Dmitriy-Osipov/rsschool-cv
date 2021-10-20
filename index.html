@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
     <script src="./index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Orbitron:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/adaptive.css">
@@ -85,7 +88,7 @@
                         Now I working as a SCADA-engineer in the power industry. 
                         At my cuurent job I'm managing special software and hardware equipment.   
                         I started coding with scrypts on JS for my work. 
-                        Now I'm taking a course at "The Rolling Scopes School" and you are looking at my first site.
+                        Now I'm keep learning.
                         I hope this will help me get into the Frontend development world.
                     </p>
                 </section>
@@ -163,7 +166,7 @@
                     <pre>
                         <code class="language-javascript">
                             function formatDuration (sec) {
-                                if (sec == 0) return 'now';
+                                if (sec === 0) return 'now';
                                 
                                 let string = '';
                                 let [y, d, h, m, s] =  [~~(sec / (365*24*60*60)), 
@@ -182,11 +185,11 @@
                                 h ? h == 1 ? string += h + ' hour' : string += h + ' hours' : 0;                   //hours
                                 h && m && s ?  string += ', ' : h && m ? string += ' and ' : 0;
                                 
-                                m ? m == 1 ? string += m + ' minute' : string += m + ' minutes' : 0;        //minutes
+                                m ? m == 1 ? string += m + ' minute' : string += m + ' minutes' : 0;       //minutes
                                 
                                 (y || d || h || m) && s ? string += ' and ' : string;                                       //and
                                 
-                                s ? s == 1 ? string += s + ' second' : string += s + ' seconds' : 0 ;          //seconds
+                                s ? s == 1 ? string += s + ' second' : string += s + ' seconds' : 0 ;         //seconds
                                 
                                 return string;                              
                               }
@@ -202,9 +205,6 @@
         <p class="footer-text">
             © 2021
         </p>
-        <a href="https://rs.school/js/">
-            <img class="rss-icon" src="img/icons/rss-logo.svg" alt="RSSchool Icon" width="87" height="30">
-        </a>
         </footer>        
     </div>   
 </body>

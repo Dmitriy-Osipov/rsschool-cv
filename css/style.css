@@ -15,7 +15,7 @@
 
 body {
     box-sizing: border-box;
-    font: 1rem "Comic Sans MS", cursive, sans-serif;
+    font: 1rem 'Chakra Petch', sans-serif;
     line-height: 1.5rem;
     background-color: var(--dark-color);  
 }
@@ -47,11 +47,12 @@ header img {
 }
 
 h1 {
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 2.2rem;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
     line-height: 1;
     text-transform: uppercase;
-    letter-spacing: 3px;    
+    letter-spacing: 5px;    
 }
 
 h2 {
@@ -61,13 +62,13 @@ h2 {
     border-top: 2px solid var(--blue-color);
     text-transform: uppercase;
     text-align: left;
-    font-weight: bold;
+    font-weight: 700;
     background-color: var(--dark-color);
     color: var(--blue-color);
 }
 
 strong {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.1em;
 }
 
@@ -86,7 +87,8 @@ main li {
 
 .contacts li p {
     display: inline;
-    vertical-align: middle;    
+    vertical-align: middle;
+    font-size: 0.9em;    
 }
 
 .skills ul,
@@ -100,7 +102,7 @@ main li {
 }
 
 .language {
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .rightside {
@@ -124,7 +126,7 @@ h3 {
     flex: 1;
     vertical-align: middle;
     padding-bottom: 4px;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.3em;
     text-transform: uppercase;
     color: var(--dark-color);
@@ -171,7 +173,7 @@ code {
     margin-top: 20px;
     border-right: 5px solid var(--blue-color);
     border-top: 5px solid var(--blue-color);
-    font: 1em Arial, sans-serif;    
+    font: 0.9em 'Chakra Petch', sans-serif;   
     background-color: var(--light-color);
     border-radius: 10px;    
 }
@@ -187,7 +189,7 @@ footer {
 }
 
 .footer-text {
-    font: bold 0.8em "Comic Sans MS", cursive, sans-serif; 
+    font: 0.8em 'Orbitron', sans-serif; 
     color: var(--semi-dark-color);
 }
 
